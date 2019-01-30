@@ -4,6 +4,7 @@ import com.mware.bigconnect.gremlin.structure.*;
 import com.mware.ge.GraphConfiguration;
 import com.mware.ge.id.UUIDIdGenerator;
 import com.mware.ge.inmemory.InMemoryGraph;
+import com.mware.ge.rocksdb.RocksDBGraph;
 import com.mware.ge.search.DefaultSearchIndex;
 import com.mware.ge.serializer.kryo.QuickKryoGeSerializer;
 import org.apache.commons.configuration.Configuration;
@@ -11,6 +12,7 @@ import org.apache.tinkerpop.gremlin.AbstractGraphProvider;
 import org.apache.tinkerpop.gremlin.LoadGraphWith;
 import org.apache.tinkerpop.gremlin.structure.Graph;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -40,7 +42,7 @@ public class BcGraphProvider extends AbstractGraphProvider {
 
         return new HashMap<String, Object>() {{
             put(Graph.GRAPH, TinkerBcGraph.class.getName());
-            put("auths", BcStructureCheck.AUTHORIZATIONS_ALL);
+            put("auths", "a,b");
             put("", InMemoryGraph.class.getName());
 //            put("", RocksDBGraph.class.getName());
 //            put("rocksdb.data.path", directory + File.separator + "data");

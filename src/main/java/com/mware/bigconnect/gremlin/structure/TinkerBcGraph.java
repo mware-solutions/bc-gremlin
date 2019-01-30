@@ -56,7 +56,9 @@ public class TinkerBcGraph implements Graph {
                 .filter(k -> configuration.getProperty(k) instanceof String)
                 .forEach(k -> { bcConfig.put(k, configuration.getString(k)); });
         com.mware.ge.Graph bcGraph = new GraphFactory().createGraph(bcConfig);
-        return new TinkerBcGraph(bcGraph, (Authorizations) configuration.getProperty("auths"), configuration);
+        String strAuths = configuration.getString("auths", "Administrator");
+        Authorizations auths = new Authorizations(strAuths.split(","));
+        return new TinkerBcGraph(bcGraph, auths, configuration);
     }
 
     @Override
