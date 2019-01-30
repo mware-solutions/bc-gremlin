@@ -1,4 +1,4 @@
-package com.mware.ge.gremlin;
+package com.mware.bigconnect.gremlin.structure;
 
 import com.mware.ge.util.StreamUtils;
 import org.apache.tinkerpop.gremlin.structure.Graph;
@@ -7,10 +7,10 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class BcGraphVariables implements Graph.Variables  {
+public class TinkerBcGraphVariables implements Graph.Variables  {
     private com.mware.ge.Graph bcGraph;
 
-    public BcGraphVariables(com.mware.ge.Graph bcGraph) {
+    public TinkerBcGraphVariables(com.mware.ge.Graph bcGraph) {
         this.bcGraph = bcGraph;
     }
 

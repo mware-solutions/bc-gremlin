@@ -1,9 +1,9 @@
-package com.mware.ge.gremlin;
+package com.mware.bigconnect.gremlin;
 
 import com.mware.ge.Authorizations;
 import com.mware.ge.Graph;
 import com.mware.ge.Visibility;
-import com.mware.ge.gremlin.structure.TinkerBcGraph;
+import com.mware.bigconnect.gremlin.structure.TinkerBcGraph;
 import org.apache.tinkerpop.gremlin.AbstractGremlinTest;
 import org.apache.tinkerpop.gremlin.structure.Vertex;
 import org.junit.Before;

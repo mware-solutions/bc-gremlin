@@ -1,7 +1,7 @@
-package com.mware.ge.gremlin;
+package com.mware.bigconnect.gremlin;
 
+import com.mware.bigconnect.gremlin.structure.*;
 import com.mware.ge.GraphConfiguration;
-import com.mware.ge.gremlin.structure.*;
 import com.mware.ge.id.UUIDIdGenerator;
 import com.mware.ge.inmemory.InMemoryGraph;
 import com.mware.ge.search.DefaultSearchIndex;
@@ -23,7 +23,7 @@ public class BcGraphProvider extends AbstractGraphProvider {
         add(TinkerBcGraph.class);
         add(TinkerBcVertex.class);
         add(TinkerBcVertexProperty.class);
-        add(BcGraphVariables.class);
+        add(TinkerBcGraphVariables.class);
     }};
 
     protected Graph.Features features = null;

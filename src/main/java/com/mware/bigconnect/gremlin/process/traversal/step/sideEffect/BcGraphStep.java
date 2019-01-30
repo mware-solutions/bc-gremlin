@@ -1,6 +1,6 @@
-package com.mware.ge.gremlin.process.traversal.step.sideEffect;
+package com.mware.bigconnect.gremlin.process.traversal.step.sideEffect;
 
-import com.mware.ge.gremlin.structure.TinkerBcGraph;
+import com.mware.bigconnect.gremlin.structure.TinkerBcGraph;
 import org.apache.tinkerpop.gremlin.process.traversal.P;
 import org.apache.tinkerpop.gremlin.process.traversal.step.HasContainerHolder;
 import org.apache.tinkerpop.gremlin.process.traversal.step.map.GraphStep;

@@ -1,12 +1,11 @@
-package com.mware.ge.gremlin.structure;
+package com.mware.bigconnect.gremlin.structure;
 
+import com.mware.bigconnect.gremlin.process.traversal.strategy.optimization.BcGraphStepStrategy;
 import com.mware.core.model.properties.BcProperties;
 import com.mware.ge.Authorizations;
 import com.mware.ge.GraphFactory;
 import com.mware.ge.VertexBuilder;
 import com.mware.ge.Visibility;
-import com.mware.ge.gremlin.BcGraphVariables;
-import com.mware.ge.gremlin.process.traversal.strategy.optimization.BcGraphStepStrategy;
 import com.mware.ge.query.Query;
 import com.mware.ge.query.TextPredicate;
 import com.mware.ge.util.StreamUtils;
@@ -154,7 +153,7 @@ public class TinkerBcGraph implements Graph {
 
     @Override
     public Variables variables() {
-        return new BcGraphVariables(bcGraph);
+        return new TinkerBcGraphVariables(bcGraph);
     }
 
     @Override
@@ -250,7 +249,7 @@ public class TinkerBcGraph implements Graph {
         }
 
         public class BcGraphGraphFeatures implements GraphFeatures {
-            private VariableFeatures variableFeatures = new BcGraphVariables.BcVariableFeatures();
+            private VariableFeatures variableFeatures = new TinkerBcGraphVariables.BcVariableFeatures();
 
             BcGraphGraphFeatures() {
             }

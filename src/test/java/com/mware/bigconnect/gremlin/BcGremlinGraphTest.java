@@ -1,10 +1,8 @@
-package com.mware.ge.gremlin;
+package com.mware.bigconnect.gremlin;
 
-import com.mware.ge.gremlin.structure.TinkerBcGraph;
+import com.mware.bigconnect.gremlin.structure.TinkerBcGraph;
 import org.apache.tinkerpop.gremlin.GraphProviderClass;
-import org.apache.tinkerpop.gremlin.process.ProcessComputerSuite;
 import org.apache.tinkerpop.gremlin.process.ProcessStandardSuite;
-import org.apache.tinkerpop.gremlin.structure.StructureStandardSuite;
 import org.junit.runner.RunWith;
 
 @RunWith(ProcessStandardSuite.class)

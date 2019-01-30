@@ -1,4 +1,4 @@
-package com.mware.ge.gremlin.structure;
+package com.mware.bigconnect.gremlin.structure;
 
 import com.mware.ge.Authorizations;
 import com.mware.ge.Visibility;

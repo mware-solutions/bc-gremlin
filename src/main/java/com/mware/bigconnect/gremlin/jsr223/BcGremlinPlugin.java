@@ -1,6 +1,6 @@
-package com.mware.ge.gremlin;
+package com.mware.bigconnect.gremlin.jsr223;
 
-import com.mware.ge.gremlin.structure.*;
+import com.mware.bigconnect.gremlin.structure.*;
 import org.apache.tinkerpop.gremlin.jsr223.AbstractGremlinPlugin;
 import org.apache.tinkerpop.gremlin.jsr223.DefaultImportCustomizer;
 import org.apache.tinkerpop.gremlin.jsr223.ImportCustomizer;
@@ -14,7 +14,7 @@ public class BcGremlinPlugin extends AbstractGremlinPlugin {
                     TinkerBcVertexProperty.class,
                     TinkerBcEdgeProperty.class,
                     TinkerBcMetadataProperty.class,
-                    BcGraphVariables.class
+                    TinkerBcGraphVariables.class
             ).create();
 
     private static final BcGremlinPlugin instance = new BcGremlinPlugin();

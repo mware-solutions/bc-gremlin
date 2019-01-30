@@ -1,10 +1,9 @@
-package com.mware.ge.gremlin.structure;
+package com.mware.bigconnect.gremlin.structure;
 
 import com.mware.core.model.properties.BcProperties;
 import com.mware.ge.Authorizations;
 import com.mware.ge.EdgeBuilderBase;
 import com.mware.ge.Visibility;
-import com.mware.ge.util.IterableUtils;
 import org.apache.tinkerpop.gremlin.structure.*;
 import org.apache.tinkerpop.gremlin.structure.util.ElementHelper;
 import org.apache.tinkerpop.gremlin.structure.util.StringFactory;

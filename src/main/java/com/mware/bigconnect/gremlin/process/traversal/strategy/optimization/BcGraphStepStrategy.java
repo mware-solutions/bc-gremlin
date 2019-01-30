@@ -1,6 +1,6 @@
-package com.mware.ge.gremlin.process.traversal.strategy.optimization;
+package com.mware.bigconnect.gremlin.process.traversal.strategy.optimization;
 
-import com.mware.ge.gremlin.process.traversal.step.sideEffect.BcGraphStep;
+import com.mware.bigconnect.gremlin.process.traversal.step.sideEffect.BcGraphStep;
 import org.apache.tinkerpop.gremlin.process.traversal.Step;
 import org.apache.tinkerpop.gremlin.process.traversal.Traversal;
 import org.apache.tinkerpop.gremlin.process.traversal.TraversalStrategy;

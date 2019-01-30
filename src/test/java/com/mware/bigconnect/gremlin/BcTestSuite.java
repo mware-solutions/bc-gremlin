@@ -1,4 +1,4 @@
-package com.mware.ge.gremlin;
+package com.mware.bigconnect.gremlin;
 
 import org.apache.tinkerpop.gremlin.AbstractGremlinSuite;
 import org.apache.tinkerpop.gremlin.process.traversal.TraversalEngine;
